@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 # Read data from file
-data = np.loadtxt("/Users/hungbach/python/python/GTS/input.txt")
+data = np.loadtxt("input.txt") #Enter the input.txt file's path here
 
 # Print the system of linear equations
 print("Phương trình dưới dạng ma trận:\n", data)
