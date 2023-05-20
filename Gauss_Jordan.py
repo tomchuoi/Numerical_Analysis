@@ -65,18 +65,17 @@ def PrintResult(a, n, flag):
 		print("Vô số nghiệm")
 	elif (flag == 3):
 		print("Vô nghiệm")
-	# Printing the solution by dividing constants by
-	# their respective diagonal elements
+	# In đáp án bằn cách chia hệ số 
+	# cho phần tử đường chéo chính.
 	else:		
 		for i in range(n):
 			print(a[i][n] / a[i][i], end=" ")
 
-# To check whether infinite solutions
-# exists or no solution exists
+# Kiểm tra xem có vô nghiệm hay không
 def CheckConsistency(a, n, flag):
 
-	# flag == 2 for infinite solution
-	# flag == 3 for No solution
+	# flag == 2 nếu vô số nghiệm
+	# flag == 3 nếu vô n
 	flag = 3
 	for i in range(n):
 		sum = 0
