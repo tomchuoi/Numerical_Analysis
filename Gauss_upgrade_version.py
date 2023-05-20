@@ -1,6 +1,7 @@
 import numpy as np
 
-with open('/Users/hungbach/python/python/GTS/input.txt', 'r') as f:
+#Enter the input.txt file's path here
+with open('input.txt', 'r') as f: 
     input_data = f.read()
 
 # Splitting input data by blank lines to get separate systems of equations
