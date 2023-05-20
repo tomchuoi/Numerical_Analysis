@@ -1,2 +1,2 @@
 # Numerical_Analysis
-Algorithms that solve polynomial equations.
+Algorithms that solve system of equations.
