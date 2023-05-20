@@ -1,21 +1,20 @@
 import numpy as np
 
-#Enter the input.txt file's path here
+#Nhập đường dẫn vào đây
 with open('input.txt', 'r') as f: 
     input_data = f.read()
 
-# Splitting input data by blank lines to get separate systems of equations
+# Tách dữ liệu đầu vào bằng các dòng trống để có các hệ phương trình riêng biệt
 systems = input_data.split('\n\n')
 
 for i, system in enumerate(systems):
     print(f'System {i+1}:')
-    # Splitting each system by newlines to get individual equations
+    # Chia thành các dòng để có các phương trình riêng biệt
     equations = system.strip().split('\n')
     n = len(equations)
     
-    # Creating a numpy array of size n x (n+1) to store augmented matrix
+    # Tạo một mảng numpy có kích thước n x (n+1) để lưu ma trận bổ sung.
     a = np.zeros((n, n+1))
-
     for j in range(n):
         row = equations[j].split()
         for k in range(n+1):
