@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 # Đọc dữ liệu từ file input
-data = np.loadtxt("input.txt") #Enter the input.txt file's path here
+data = np.loadtxt("input.txt") #Điền đường dẫn file input vào đây
 
 # In hệ phương trình dưới dạng ma trận
 print("Phương trình dưới dạng ma trận:\n", data)
