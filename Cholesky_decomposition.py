@@ -14,7 +14,7 @@ def cholesky_decomposition(matrix):
     return L
 
 # Read matrix from input file
-with open("matrix.txt", "r") as file:
+with open("input.txt", "r") as file:
     lines = file.readlines()
 
 matrix = []
